@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
-  root 'pages#index'
+  root 'pages#home'
   resources :posts
   
   get '/user/:id' => 'pages#profile'
